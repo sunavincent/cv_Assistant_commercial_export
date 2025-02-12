@@ -1,0 +1,273 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base styling */
+  body {
+    font-family: "Work Sans", sans-serif;
+    line-height: 1.6;
+    color: #2e688c;
+  }
+  
+  /* Navigation */
+  .container.nav {
+    width: 100%;
+    background-color: #94e1f2;
+    padding: 10px 20px;
+  }
+  .container.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .container.nav li {
+    margin-right: 15px;
+  }
+  .container.nav a {
+    text-decoration: none;
+    color: #2e688c;
+    font-size: 1rem;
+    padding: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .container.nav a:hover,
+  .container.nav a.active {
+    color: #dff0f2;
+    background-color: #6cbad9;
+    border-radius: 4px;
+  }
+  
+  /* Summary Section */
+  .container.summary {
+    background-color: #dff0f2;
+    min-height: 100vh;
+    padding: 100px 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container.summary .left {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 20px;
+  }
+  .container.summary h2 {
+    color: #6cbad9;
+    font-size: 2rem;
+    margin-left: 100px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  .container.summary p {
+    margin: 30px 100px 0;
+    font-size: 1rem;
+    width: 60%;
+  }
+  
+  /* Skills Section */
+  .container.skills {
+    background-color: #fffbf0;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .container.skills .title h2 {
+    font-size: 2rem;
+    color: #6cbad9;
+    padding-bottom: 30px;
+  }
+  .skills-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .skills-box ul,
+  .skills-box p {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #2e688c;
+    text-align: left;
+    margin-left: 100px;
+  }
+  .skills-box h4 {
+    margin-bottom: 10px;
+    color: #94e1f2;
+    text-align: left;
+    margin-left: 100px;
+    font-weight: normal;
+  }
+  
+  /* Experience Section */
+  .container.exp {
+    background-color: #dff0f2;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .container.exp .title h2 {
+    color: #6cbad9;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .container.exp .title p {
+    color: #94e1f2;
+  }
+  .exp-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .exp-box {
+    padding: 20px;
+  }
+  .exp-box p {
+    color: #2e688c;
+    text-align: left;
+  }
+  
+  /* Education Section */
+  .container.edu {
+    background-color: #fffbf0;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .container.edu .title h2 {
+    font-size: 2rem;
+  }
+  .edu-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .edu-boxes ul,
+  .edu-boxes p {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: #2e688c;
+    text-align: left;
+    margin-left: 100px;
+  }
+  .edu-boxes h4 {
+    margin-bottom: 10px;
+    color: #94e1f2;
+    text-align: left;
+    margin-left: 100px;
+    font-weight: normal;
+  }
+  
+  /* Footer */
+  .container.footer {
+    width: 100%;
+    background-color: #94e1f2;
+    height: 40px;
+    padding: 10px 20px 0;
+  }
+  .container.footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 40px;
+  }
+  .container.footer li {
+    margin: 0 10px;
+  }
+  .container.footer a {
+    text-decoration: none;
+    color: #2e688c;
+    font-size: 1rem;
+    padding: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .container.footer a:hover {
+    color: #dff0f2;
+    background-color: #6cbad9;
+    border-radius: 4px;
+  }
+  
+  /* Responsive Media Queries */
+  
+  /* For screens up to 1024px (small laptops/tablets) */
+  @media (max-width: 1024px) {
+    .container.suna h1 {
+      font-size: 7rem;
+    }
+    .container.suna h4 {
+      font-size: 2.5rem;
+    }
+    .container.intro p,
+    .container.skills p,
+    .container.contact p {
+      font-size: 1.3rem;
+    }
+  }
+  
+  /* For screens up to 768px (tablets) */
+  @media (max-width: 768px) {
+    .container.nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .container.nav li {
+      margin-bottom: 10px;
+    }
+    .container.intro p,
+    .container.skills p,
+    .container.contact p {
+      width: 90%;
+      font-size: 1.2rem;
+    }
+    .container.suna h1 {
+      font-size: 5rem;
+    }
+    .container.suna h4 {
+      font-size: 2rem;
+    }
+    .container.skills h2,
+    .container.contact h2 {
+      font-size: 3rem;
+    }
+    .skills-boxes, .exp-items, .edu-boxes {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* For screens up to 480px (small mobiles) */
+  @media (max-width: 480px) {
+    .container.nav a {
+      font-size: 0.9rem;
+    }
+    .container.suna h1 {
+      font-size: 4rem;
+    }
+    .container.suna h4 {
+      font-size: 1.5rem;
+    }
+    .container.intro p,
+    .container.skills p,
+    .container.contact p {
+      width: 100%;
+      font-size: 1rem;
+    }
+    .container.skills h2,
+    .container.contact h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
